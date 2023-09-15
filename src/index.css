@@ -1,13 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   /* now it works as inteded again with 100% */
+  background: linear-gradient(135.8deg, rgb(3, 3, 33) 27.1%, rgb(67, 20, 30) 77.5%);
+  min-height: 100vh;  /* something is amiss here as well, but the background works without issue */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.code {
+  color:rgb(214, 18, 93);
+  font-size: 50px;
+  position: absolute;
+  transform: translate(340%, -100px);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
