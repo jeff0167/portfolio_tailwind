@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_tailwind/static/css/main.c4807422.css",
-    "main.js": "/portfolio_tailwind/static/js/main.bb5ed0e4.js",
-    "static/js/787.b7a36a0b.chunk.js": "/portfolio_tailwind/static/js/787.b7a36a0b.chunk.js",
+    "main.css": "/portfolio_tailwind/static/css/main.fe7fd862.css",
+    "main.js": "/portfolio_tailwind/static/js/main.4ef2735c.js",
     "static/media/DiceGame.png": "/portfolio_tailwind/static/media/DiceGame.4ccff95812b1b8069b25.png",
     "static/media/MachineAgents.png": "/portfolio_tailwind/static/media/MachineAgents.873fbc12334e66f92677.png",
     "static/media/Portrait.jpg": "/portfolio_tailwind/static/media/Portrait.18e26807c3d9600b5b9a.jpg",
@@ -14,12 +13,11 @@
     "static/media/Slider.png": "/portfolio_tailwind/static/media/Slider.5edd485c54b0e91a6959.png",
     "static/media/Vue.png": "/portfolio_tailwind/static/media/Vue.1602d835e87c7f0583fb.png",
     "index.html": "/portfolio_tailwind/index.html",
-    "main.c4807422.css.map": "/portfolio_tailwind/static/css/main.c4807422.css.map",
-    "main.bb5ed0e4.js.map": "/portfolio_tailwind/static/js/main.bb5ed0e4.js.map",
-    "787.b7a36a0b.chunk.js.map": "/portfolio_tailwind/static/js/787.b7a36a0b.chunk.js.map"
+    "main.fe7fd862.css.map": "/portfolio_tailwind/static/css/main.fe7fd862.css.map",
+    "main.4ef2735c.js.map": "/portfolio_tailwind/static/js/main.4ef2735c.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4807422.css",
-    "static/js/main.bb5ed0e4.js"
+    "static/css/main.fe7fd862.css",
+    "static/js/main.4ef2735c.js"
   ]
 }
