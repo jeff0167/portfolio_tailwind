@@ -17,7 +17,7 @@ function About() {
       <RiArrowLeftCircleFill class="backArrow" onClick={()=> navigate("../portfolio_tailwind")}></RiArrowLeftCircleFill>
       <div class="header">
         <div class="container">
-              <div bg="transparent" style={{ width: '80rem' }}>
+              <div style={{ width: '80rem' }}>
                 <div class="bg-transparent">
                     <img alt="Resume" src={resume}/> 
                   </div>

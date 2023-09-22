@@ -17,7 +17,7 @@ function HomePage() {  // shift + alt + f  to format
         <code class="code">My portfolio</code>
         <div className="container">
             <div class="grid grid-cols-3 gap-5 justify-items-center">
-                <div class="max-w-xl rounded overflow-hidden bg-zinc-800" onClick={()=> navigate("about")}>
+                <div class="max-w-xl rounded bg-zinc-800" onClick={()=> navigate("about")}>
                     <div className='imageZoom'>
                         <img alt="Portrait" src={portrait}></img>
                     </div>
@@ -25,7 +25,7 @@ function HomePage() {  // shift + alt + f  to format
                         <p class="text-white text-center text-base">About me</p>
                     </div>
                 </div>
-                <div class="max-w-xl rounded overflow-hidden bg-zinc-800" onClick={()=> navigate("projects")}>
+                <div class="max-w-xl rounded bg-zinc-800" onClick={()=> navigate("projects")}>
                     <div className='imageZoom'>
                         <img alt="Portrait" src={project}></img>
                     </div>
@@ -33,7 +33,7 @@ function HomePage() {  // shift + alt + f  to format
                         <p class="text-white text-center text-base">Projects</p>
                     </div>
                 </div>
-                <div class="max-w-xl rounded overflow-hidden bg-zinc-800">
+                <div class="max-w-xl rounded bg-zinc-800">
                     <div className='imageZoom'>
                         <img alt="Portrait" src={other}></img>
                     </div>
