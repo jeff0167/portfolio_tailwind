@@ -1,16 +1,23 @@
+@use "partial" as p;
+$hundred: 100%;
+
+@mixin scale-color($scale, $color: white){ // can also add default params
+  color: $color;
+  scale: $scale;
+}
+
+@function k($x){
+  @return 10*$x;
+}
+
 .container{
   text-align: center;
-  min-width: 100%;
+  min-width: $hundred;
   /* border: 1px solid red; */
 }
 
-.cardo {
-  margin: 0 auto; 
-  float: none;
-}
-
 .title{
-  color: white;
+  color: p.$text-color;
 }
 
 .imageZoom {
@@ -18,13 +25,13 @@
 
   img {
     background-image: rgb(0,0,0,0.1);
-    width: 100%;
+    width: $hundred;
     transition: 0.2s all ease-in-out;
     cursor: pointer;
-  }
 
-  :hover {
-      transform: scale(1.05); 
+    &:hover { // scss says to use &:hover but it works fine without & 
+        transform: scale(1.05); 
+    }
   }
 }
 
@@ -43,8 +50,7 @@
 }
 
 .backArrow{
-  scale: 4;
-  color:rgb(214, 18, 93);
+  @include scale-color(4, p.$focus-color);
   z-index: 1;
   position: fixed;
   top: 100px;
@@ -60,18 +66,15 @@
   margin-bottom: 200px;
 }
 
-.iconLink {
-  color: white;
-  scale: 2;
+.iconLink { // this small project really doesn't benefit from using partials, just added complexity
+  @include scale-color(2, white); // sending the var text-color just to show it, even though it is the same as the default param
   margin: 10px;
 }
 
-.extraMarginLeft{
-  margin-left: 20px;
+.iconLinkNoMargin {
+  @include scale-color(2);
 }
 
-.rightBottomCorner{
-    position: absolute !important;
-    //right: 100px;
-    transform: translate(810%, -200px);
+.extraMarginLeft{
+  margin-left: k(2px); // if you don't want to write the whole number, imagine if the number was in billions just write b(2px) but when would you really do that in css?
 }

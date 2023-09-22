@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$text-color: white;
+$focus-color: rgb(214, 18, 93);
+
+
+.code {
+  color:rgb(214, 18, 93);
+  font-size: 50px;
+  position: absolute;
+  transform: translate(340%, -100px);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body {
+    /* now it works as inteded again with 100% */
+   background: linear-gradient(135.8deg, rgb(3, 3, 33) 27.1%, rgb(67, 20, 30) 77.5%);
+   min-height: 100vh;  /* something is amiss here as well, but the background works without issue */
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
